@@ -1,0 +1,32 @@
+syntax = "proto3";
+package testdata;
+option go_package = ".;testdata";
+message Ping {
+    string Content = 1;
+}
+
+message Pong {
+    string Content = 1;
+}
+
+message NewUser  {
+  string content = 1;
+}
+
+message UserLeft  {
+ string content = 1;
+}
+
+message AllMembers{
+    repeated int64 members = 1;
+}
+
+message UserMessage  {
+    string name = 1;
+    string content = 2;
+}
+
+message JoinResponse {
+    int32   code = 1;
+    string result = 2;
+}
